@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 25vh;
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  padding: 0% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #776;
+}
+
+nav img {
+  width: 130px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 14px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.page-header {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 7px;
+}
+
+.page-header:before {
+  content: "";
+  width: 500px;
+  height: 2px;
+  display: block;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: -64%;
+}
+
+.page-header:after {
+  content: "";
+  width: 500px;
+  height: 2px;
+  display: block;
+  background: black;
+  position: absolute;
+  top: 50%;
+  right: -64%;
+}
+
+/* video sizing */
+
+.iframee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart {
+  color: #f44336;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+  gap: 20px; /* Gap between the columns */
+  padding: 20px;
+}
+
+.grid-box {
+  background-color: #f2f2f2; /* Grey background color */
+  padding: 20px; /* Padding for the content inside the box */
+  border: 1px solid #ccc; /* Optional: Border for the box */
+  border-radius: 10px; /* Border radius */
+}
